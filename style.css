@@ -4,14 +4,33 @@ html, body {
 }
 
 body{
- background : black; 
+ background :  
+  url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/02/Usign-Gradients-Featured-Image.jpg);
+  background-size : cover;
+}
+
+.card{
+  background : rgba(255,255,255,0.25);
+  margin: 100px 225px;
+    width: 65%;
+  height : 65%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  border : 2px solid rgba(255,255,255,0.3);
+  border-radius : 20px;
+  backdrop-filter : blur(4px);
 }
 
 .clock{
   position : absolute; /* positioned in acc. with the position of the nearest                                 ancestor */
-  top : 40%;
-  left : 40%;
-  color : #17D4FE;  
+  top : 50%;
+  left : 50%;
+  transform : translateX(-50%) translateY(-50%);
+  cursor : pointer;
+/*   color : #17D4FE;   */
+  color : rgba(255,255,255,0.95);
+  font : 1em sans-serif;
   font-size : 60px;  /* size of the content */
   font-family : orbitron;
   letter-spacing : 7px; /* space between each letter of the content */
